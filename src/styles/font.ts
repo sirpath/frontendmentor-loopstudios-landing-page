@@ -1,14 +1,14 @@
-import { Itim, Roboto } from 'next/font/google'
+import { Alata, Josefin_Sans } from 'next/font/google'
 
-const fontPrimary = Roboto({
+const fontPrimary = Alata({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-primary',
 })
 
-const fontSecondary = Itim({
+const fontSecondary = Josefin_Sans({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['300'],
   variable: '--font-secondary',
 })
 

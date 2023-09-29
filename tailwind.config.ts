@@ -1,5 +1,4 @@
 import daisyui from 'daisyui'
-import daisyuiThemes from 'daisyui/src/theming/themes'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -15,37 +14,19 @@ const config: Config = {
         secondary: ['var(--font-secondary)'],
       },
       colors: {
-        specific: '#F0F0F0',
+        'dark-soft': 'hsl(0, 0%, 55%)',
+        'dark-accent': 'hsl(0, 0%, 41%)',
+        'link-footer': 'hsl(228, 45%, 44%)',
+      },
+      margin: {
+        '15percen': '15%',
       },
     },
   },
   plugins: [daisyui],
   daisyui: {
-    themes: [{
-      light: {
-        ...daisyuiThemes['[data-theme=cmyk]'],
-        /*
-        primary: '', // dominant color.
-        secondary: '', // less dominant but still distinguishable.
-        accent: '', // draw attention, notifications, highlighted text
-        neutral: '', // shades of blacks, grays, and whites. don't convey a specific mood or emotion on their own.
-        'base-100': '', // base backgrounds color.
-        'base-content': '', // base content color.
-        */
-      },
-      dark: {
-        ...daisyuiThemes['[data-theme=dark]'],
-        /*
-        primary: '', // dominant color.
-        secondary: '', // less dominant but still distinguishable.
-        accent: '', // draw attention, notifications, highlighted text
-        neutral: '', // shades of blacks, grays, and whites. don't convey a specific mood or emotion on their own.
-        'base-100': '', // base backgrounds color.
-        'base-content': '', // base content color.
-        */
-      },
-    }],
-    darkTheme: 'dark',
+    themes: [],
+    darkTheme: 'light',
     logs: false,
   },
 }
