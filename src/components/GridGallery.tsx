@@ -55,7 +55,7 @@ const gallertPhostos: Array<GalleryPhoto> = [{
   firstName: 'Make it',
   lastName: 'fisheye',
   photoMobile: './images/mobile/image-fisheye.jpg',
-  photoDesktop: './images/mobile/image-fisheye.jpg',
+  photoDesktop: './images/desktop/image-fisheye.jpg',
 },
 
 ]
@@ -63,18 +63,18 @@ const gallertPhostos: Array<GalleryPhoto> = [{
 const GridGallery = () => (
   <section className="px-[5%] md:px-[10%] ">
     <div className="flex justify-center py-10 md:justify-between">
-      <h1 className="self-end font-secondary text-3xl uppercase">Our creations</h1>
+      <h1 className="self-end font-secondary text-3xl font-medium uppercase md:text-5xl">Our creations</h1>
 
       <button className="btn hidden rounded-none px-10 tracking-[.5em] hover:bg-black hover:text-white md:block" type="button">See all</button>
     </div>
     <div className="grid gap-5 font-secondary md:grid-cols-4">
-      {gallertPhostos.map(({ name, photoMobile, photoDesktop, firstName: fristName, lastName }) => (
+      {gallertPhostos.map(({ name, photoMobile, photoDesktop, firstName, lastName }) => (
         <div key={name} className="group relative">
           <Image className="h-full w-full object-cover md:hidden" priority width={654} height={240} src={photoMobile} alt={name} />
           <Image className="hidden h-full w-full object-cover md:block" priority width={256} height={450} src={photoDesktop} alt={name} />
           <div className="absolute top-0 h-full w-full bg-gradient-to-r from-black/60 duration-300 group-hover:bg-white/80 md:bg-gradient-to-t md:from-black/60" />
-          <p className="absolute bottom-3 left-3 text-2xl uppercase text-white duration-300 group-hover:text-black md:text-xl lg:text-4xl">
-            <span>{fristName}</span>
+          <p className="absolute bottom-3 left-3 pl-3 text-2xl uppercase text-white duration-300 group-hover:text-black md:text-xl lg:text-4xl">
+            <span>{firstName}</span>
             <br />
             <span>{lastName}</span>
           </p>

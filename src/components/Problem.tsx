@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const Problem = () => (
-  <section className="flex flex-col px-[5%] py-20 md:flex-row md:px-[10%]">
+  <section className="flex flex-col justify-center px-[5%] py-40 md:flex-row md:px-[10%]">
     <div>
       <Image className="md:hidden" priority width={654} height={488} src="./images/mobile/image-interactive.jpg" alt="" />
       <Image className="hidden md:block" priority width={731} height={500} src="./images/desktop/image-interactive.jpg" alt="" />

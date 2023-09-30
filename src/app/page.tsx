@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const PageHome = () => (
-  <main className="max-w-7xl">
+  <main className="">
     <NavBar />
     <main>
       <Problem />

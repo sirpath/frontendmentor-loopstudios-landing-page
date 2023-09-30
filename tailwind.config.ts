@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         'dark-soft': 'hsl(0, 0%, 55%)',
         'dark-accent': 'hsl(0, 0%, 41%)',
-        'link-footer': 'hsl(228, 45%, 44%)',
+
       },
       margin: {
         '15percen': '15%',

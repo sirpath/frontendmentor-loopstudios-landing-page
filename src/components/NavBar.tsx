@@ -5,9 +5,9 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const NavBar = () => (
   <header className="relative">
-    <Image className="md:hidden" width={750} height={1300} priority src="./images/mobile/image-hero.jpg" alt="banner" />
-    <Image className="hidden md:block" width={1440} height={650} priority src="./images/desktop/image-hero.jpg" alt="banner" />
-
+    <Image className="h-full w-full object-cover md:hidden" width={750} height={1300} priority src="./images/mobile/image-hero.jpg" alt="banner" />
+    <Image className="hidden h-full w-full object-cover md:block" width={1440} height={650} priority src="./images/desktop/image-hero.jpg" alt="banner" />
+    <div className="absolute top-0 h-full w-full bg-gradient-to-b from-black/50" />
     <div className="absolute top-0 flex w-full justify-between px-6 pt-10 md:px-[10%]">
       <div className="z-[30] self-center">
         <svg width="192" height="32" xmlns="http://www.w3.org/2000/svg">
